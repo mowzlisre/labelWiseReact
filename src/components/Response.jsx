@@ -61,7 +61,7 @@ function Response({ isCollapsed, setIsCollapsed }) {
 
     const saveFunction = async () => {
         try {
-            const response = await fetch('http://54.161.151.76/create/', {
+            const response = await fetch('https://54.161.151.76/create/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

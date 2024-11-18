@@ -14,7 +14,7 @@ function Navbar({isCollapsed, setIsCollapsed}) {
                 return;
             }
     
-            const response = await fetch('http://54.161.151.76/logout/', {
+            const response = await fetch('https://54.161.151.76/logout/', {
                 method: 'POST',
                 headers: {
                     'Authorization': `Token ${token}`,

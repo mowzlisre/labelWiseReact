@@ -18,7 +18,7 @@ function Login() {
 
     const validateToken = async (token) => {
         try {
-            const response = await fetch('http://54.161.151.76/validate-token/', {
+            const response = await fetch('https://54.161.151.76/validate-token/', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Token ${token}`,
@@ -46,7 +46,7 @@ function Login() {
         setLoading(true);
 
         try {
-            const response = await fetch('http://54.161.151.76/login/', {
+            const response = await fetch('https://54.161.151.76/login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
