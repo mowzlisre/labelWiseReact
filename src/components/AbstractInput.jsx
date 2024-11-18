@@ -21,7 +21,7 @@ function AbstractInput({ isCollapsed, setIsCollapsed }) {
 
     const validateToken = async (token) => {
         try {
-            const response = await fetch("http://54.161.151.76/validate-token/", {
+            const response = await fetch("https://mowzlisre.me/validate-token/", {
                 method: "GET",
                 headers: {
                     Authorization: `Token ${token}`,
@@ -59,7 +59,7 @@ function AbstractInput({ isCollapsed, setIsCollapsed }) {
         setLoading(true);
 
         try {
-            const response = await fetch("http://54.161.151.76/process/", {
+            const response = await fetch("https://mowzlisre.me/process/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

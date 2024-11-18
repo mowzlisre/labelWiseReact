@@ -23,7 +23,7 @@ function Response({ isCollapsed, setIsCollapsed }) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://54.161.151.76/log/${id}`, {
+                const response = await fetch(`https://mowzlisre.me/log/${id}`, {
                     headers: {
                         'Authorization': `Token ${localStorage.getItem('token')}`, 
                     },
