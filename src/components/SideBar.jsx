@@ -45,7 +45,7 @@ function Sidebar({ isCollapsed, setIsCollapsed }) {
     useEffect(() => {
         const fetchLogs = async () => {
             try {
-                const response = await fetch('https://54.161.151.76/logs/', {
+                const response = await fetch('https://mowzlisre.me/logs/', {
                     method: 'GET',
                     headers: {
                         'Authorization': `Token ${localStorage.getItem("token")}`,
