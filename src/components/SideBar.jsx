@@ -45,7 +45,7 @@ function Sidebar({ isCollapsed, setIsCollapsed }) {
     useEffect(() => {
         const fetchLogs = async () => {
             try {
-                const response = await fetch('http://localhost:8000/logs/', {
+                const response = await fetch('http://54.161.151.76/logs/', {
                     method: 'GET',
                     headers: {
                         'Authorization': `Token ${localStorage.getItem("token")}`,
@@ -82,7 +82,7 @@ function Sidebar({ isCollapsed, setIsCollapsed }) {
 
     const validateToken = async (token) => {
         try {
-            const response = await fetch("http://localhost:8000/validate-token/", {
+            const response = await fetch("http://54.161.151.76/validate-token/", {
                 method: "GET",
                 headers: {
                     Authorization: `Token ${token}`,

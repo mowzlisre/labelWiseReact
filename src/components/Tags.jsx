@@ -23,7 +23,7 @@ function Tags({ data, handleNoteChange, id, saveFunction }) {
     const handleDelete = async () => {
         try {
     
-            const response = await fetch('http://localhost:8000/delete-log/', {
+            const response = await fetch('http://54.161.151.76/delete-log/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
